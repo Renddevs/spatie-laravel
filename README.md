@@ -2,15 +2,17 @@
 Laravel 5.8
 
 Before use this project please :
-1. install the package via composer 
-   => composer require spatie/laravel-permission
-2. you must publish the migration
-   => php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="migrations"
-3. after the migration has been published you can create the role and permission by running migration
+1. Install Composer Dependencies
+   => composer install
+2. Install NPM Dependencies
+   => npm install
+3. Create a copy of your .env file
+   => cp .env.example .env
+4. Generate an app encryption key
+   => php artisan key:generate
+5. Create an empty database for our application and config in .env
+6. Migrate the database
    => php artisan migrate
-4. then you can publish the config with
-   => php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="config"
-
 
 source : https://docs.spatie.be/laravel-permission/v3/introduction/
 
